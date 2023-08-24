@@ -1,0 +1,61 @@
+---
+import type { ISourceOptions } from 'tsparticles-engine';
+import Particles from './Particles.astro';
+
+const options: ISourceOptions = {
+  fullScreen: {
+    enable: true,
+    zIndex: -100,
+  },
+  particles: {
+    number: { value: 40, density: { enable: true, value_area: 1000 } },
+    color: { value: '#000000' },
+    shape: {
+      type: 'circle',
+      stroke: { width: 0, color: '#000000' },
+      polygon: { nb_sides: 5 },
+    },
+    opacity: {
+      value: 0.1,
+      random: false,
+      anim: { enable: false, speed: 1, opacity_min: 0, sync: false },
+    },
+    size: {
+      value: 3,
+      random: true,
+      anim: { enable: false, speed: 40, size_min: 0.1, sync: false },
+    },
+    line_linked: {
+      enable: true,
+      distance: 150,
+      color: '#000000',
+      opacity: 0.1,
+      width: 1,
+    },
+    move: {
+      enable: true,
+      speed: 1,
+      direction: 'none',
+      random: false,
+      straight: false,
+      out_mode: 'out',
+      bounce: false,
+      attract: { enable: false, rotateX: 600, rotateY: 1200 },
+    },
+  },
+  retina_detect: true,
+};
+---
+
+<script>
+  import { loadFull } from 'tsparticles';
+  import type { Engine } from 'tsparticles-engine';
+  // @ts-ignore
+  window.particlesInit = async function (engine: Engine) {
+    await loadFull(engine);
+  };
+</script>
+
+<div class="hidden">
+  <Particles id="tsparticles" options={options} init="particlesInit" />
+</div>
