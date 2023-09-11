@@ -29,6 +29,9 @@ dependencies:
   astro:
     specifier: ^2.10.12
     version: 2.10.12
+  plausible-tracker:
+    specifier: ^0.3.8
+    version: 0.3.8
   react:
     specifier: ^18.0.0
     version: 18.2.0
@@ -3031,6 +3034,11 @@ packages:
     engines: {node: '>=8'}
     dependencies:
       find-up: 4.1.0
+    dev: false
+
+  /plausible-tracker@0.3.8:
+    resolution: {integrity: sha512-lmOWYQ7s9KOUJ1R+YTOR3HrjdbxIS2Z4de0P/Jx2dQPteznJl2eX3tXxKClpvbfyGP59B5bbhW8ftN59HbbFSg==}
+    engines: {node: '>=10'}
     dev: false
 
   /postcss-js@4.0.1(postcss@8.4.28):
