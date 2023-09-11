@@ -3,6 +3,7 @@ import FAQ from 'src/components/FAQ';
 import Navbar from 'src/components/Navbar.astro';
 import GraphParticles from '../components/GraphParticles.astro';
 import Layout from '../layouts/Layout.astro';
+import LogoWall from 'src/components/LogoWall.astro';
 ---
 
 <script>
@@ -16,7 +17,7 @@ import Layout from '../layouts/Layout.astro';
 </script>
 
 <Layout title="Open Federation Initiative">
-  <main class="mx-auto container min-h-screen flex flex-col items-start px-4 lg:px-8 xl:px-0">
+  <main class="mx-auto max-w-screen-xl min-h-screen flex flex-col items-start px-4">
     <Navbar />
 
     <section class="w-full py-24">
@@ -34,6 +35,7 @@ import Layout from '../layouts/Layout.astro';
         >
         <button id="typeform" class="text-black px-6 py-3 border hover:bg-gray-100 transition-colors">Subscribe</button>
       </div>
+      <LogoWall />
     </section>
 
     <section id="solutions" class="xl:grid grid-cols-5 py-24 w-full space-y-4">
