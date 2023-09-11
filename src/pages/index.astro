@@ -17,10 +17,10 @@ import LogoWall from 'src/components/LogoWall.astro';
 </script>
 
 <Layout title="Open Federation Initiative">
-  <main class="mx-auto max-w-screen-xl min-h-screen flex flex-col items-start px-4">
+  <main class="min-h-screen flex flex-col items-start">
     <Navbar />
 
-    <section class="w-full py-24">
+    <section class="w-full py-24 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl">
       <h1 class="text-5xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-4xl">Open Federation Initiative</h1>
       <p class="text-lg md:text-2xl font-light mt-8 max-w-6xl">
         Join our open-source initiative to merge multiple GraphQL schemas into one cohesive API. This isn't just about
@@ -35,10 +35,14 @@ import LogoWall from 'src/components/LogoWall.astro';
         >
         <button id="typeform" class="text-black px-6 py-3 border hover:bg-gray-100 transition-colors">Subscribe</button>
       </div>
-      <LogoWall />
     </section>
 
-    <section id="solutions" class="xl:grid grid-cols-5 py-24 w-full space-y-4">
+    <LogoWall />
+
+    <section
+      id="solutions"
+      class="xl:grid grid-cols-5 py-24 w-full space-y-4 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl"
+    >
       <div class="col-span-2">
         <h2 class="text-2xl mb-12 md:text-4xl xl:text-6xl max-w-2xl xl:max-w-4xl !leading-tight">Solutions</h2>
       </div>
@@ -101,7 +105,10 @@ import LogoWall from 'src/components/LogoWall.astro';
       </div>
     </section>
 
-    <section id="faq" class="xl:grid grid-cols-5 pb-24 lg:py-24 w-full space-y-4">
+    <section
+      id="faq"
+      class="xl:grid grid-cols-5 pb-24 lg:py-24 w-full space-y-4 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl"
+    >
       <div class="col-span-2">
         <h2 class="text-2xl md:text-4xl xl:text-6xl max-w-2xl xl:max-w-4xl !leading-tight">
           Frequently Asked Questions
