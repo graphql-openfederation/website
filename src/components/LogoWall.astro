@@ -1,0 +1,76 @@
+---
+import logos from '../../public/logos/logos.json';
+import Logo from './Logo.astro';
+---
+
+<h2 class="px-4 mt-24 md:px-8 lg:px-12 max-w-screen-2xl mx-auto w-full">
+  Supported by small companies and big enterprises. Show yours by adding your logo <a
+    href="https://github.com/graphql-openfederation/website#contribution-and-support"
+    target="_blank"
+    class="text-purple-500">here.</a
+  >
+</h2>
+<div class="flex flex-col gap-4 w-full mt-8 mb-24">
+  <div class="marquee">
+    <div class="marquee-group">
+      {logos.map((l) => <Logo {...l} />)}
+    </div>
+    <div class="marquee-group">
+      {logos.map((l) => <Logo {...l} />)}
+    </div>
+  </div>
+  <!-- <div class="marquee marquee-reverse">
+    <div class="marquee-group">
+      {logos.map((l) => <Logo {...l} />)}
+    </div>
+    <div class="marquee-group">
+      {logos.map((l) => <Logo {...l} />)}
+    </div>
+  </div> -->
+</div>
+
+<style>
+  @keyframes scroll-x {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(calc(-100% - 16px));
+    }
+  }
+
+  @keyframes fade {
+    to {
+      opacity: 0;
+      visibility: hidden;
+    }
+  }
+
+  .marquee {
+    display: flex;
+    overflow: hidden;
+    gap: 16px;
+    mask-image: linear-gradient(
+      to right,
+      hsl(0 0% 0% / 0),
+      hsl(0 0% 0% / 1) 10%,
+      hsl(0 0% 0% / 1) 90%,
+      hsl(0 0% 0% / 0)
+    );
+  }
+
+  .marquee-group {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    gap: 16px;
+    min-width: 100%;
+    animation: scroll-x 30s linear infinite;
+  }
+
+  .marquee-reverse .marquee-group {
+    animation-direction: reverse;
+    animation-delay: -3s;
+  }
+</style>

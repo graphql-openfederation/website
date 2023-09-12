@@ -1,0 +1,32 @@
+[
+  {
+    "name": "WunderGraph",
+    "logo": "WunderGraph.svg",
+    "home": "https://wundergraph.com/"
+  },
+  {
+    "name": "Neo4j",
+    "logo": "Neo4j.svg",
+    "home": "https://neo4j.com/brand/"
+  },
+  {
+    "name": "Tailor",
+    "logo": "Tailor.svg",
+    "home": "https://www.tailor.tech/"
+  },
+  {
+    "name": "Soundtrack",
+    "logo": "Soundtrack.svg",
+    "home": "https://www.soundtrackyourbrand.com/"
+  },
+  {
+    "name": "TravelpassGroup",
+    "logo": "TravelpassGroup.svg",
+    "home": "https://www.travelpassgroup.com/"
+  },
+  {
+    "name": "Sibi",
+    "logo": "Sibi.svg",
+    "home": "https://www.sibipro.com/"
+  }
+]

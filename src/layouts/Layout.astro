@@ -1,0 +1,24 @@
+---
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="description" content="The open-federation initiative" />
+    <meta name="viewport" content="width=device-width" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+    <script defer data-domain="open-federation.org" src="https://plausible.io/js/script.hash.js"></script>
+    <script defer data-domain="open-federation.org" src="https://plausible.io/js/script.outbound-links.js"></script>
+  </head>
+  <body class="bg-white text-black">
+    <slot />
+  </body>
+</html>

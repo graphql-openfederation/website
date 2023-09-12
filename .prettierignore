@@ -1,0 +1,20 @@
+node_modules
+
+# Package manager
+pnpm-lock.yaml
+*lock.json
+
+# Output
+gen
+dist
+
+# Logs
+logs
+*.log
+
+# IDE
+.vscode
+.idea
+
+CHANGELOG.md
+.husky

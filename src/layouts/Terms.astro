@@ -1,0 +1,14 @@
+---
+import Navbar from 'src/components/Navbar.astro';
+import Layout from './Layout.astro';
+import Footer from 'src/components/Footer.astro';
+---
+
+<Layout title="Open Federation | Terms">
+  <Navbar />
+  <main class="prose max-w-screen-lg mx-auto px-4 md:px-8 py-12">
+    <h1>Terms of Use</h1>
+    <slot />
+  </main>
+  <Footer />
+</Layout>
