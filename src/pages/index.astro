@@ -21,11 +21,10 @@ import LogoWall from 'src/components/LogoWall.astro';
     <Navbar />
 
     <section class="w-full py-24 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl">
-      <h1 class="text-5xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-4xl">Open Federation Initiative</h1>
+      <h1 class="text-5xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-4xl">Open Federation</h1>
       <p class="text-lg md:text-2xl font-light mt-8 max-w-6xl">
-        Join our open-source initiative to merge multiple GraphQL schemas into one cohesive API. This isn't just about
-        federation—it's a collaborative vision for streamlined data access. With our community-driven specification,
-        let's redefine how APIs collaborate. Be part of the future; let's craft together.
+        Open Federation is a community-driven open source initiative to create and maintain a specification for
+        federated GraphQL APIs. Be part of the future; let's craft together.
       </p>
       <div class="flex items-center gap-x-4 mt-8">
         <a
@@ -33,7 +32,9 @@ import LogoWall from 'src/components/LogoWall.astro';
           href="https://spec.open-federation.org/"
           class="bg-black hover:opacity-80 px-6 py-3 text-white transition-colors">Open Spec</a
         >
-        <button id="typeform" class="text-black px-6 py-3 border hover:bg-gray-100 transition-colors">Subscribe</button>
+        <button id="typeform" class="text-black px-6 py-3 border hover:bg-gray-100 transition-colors"
+          >Subscribe for Updates</button
+        >
       </div>
     </section>
 
@@ -66,8 +67,8 @@ import LogoWall from 'src/components/LogoWall.astro';
             <p class="font-semibold">WunderGraph Cosmo</p>
           </div>
           <p class="p-4 my-auto">
-            The open-source GraphQL Federation platform. One place for all your GraphQL API integrations without vendor
-            lock-in. Host it on-prem or run it in our cloud.
+            The open source alternative to Apollo GraphOS and Federation. Migrate in one click and get rid of vendor
+            lock-in. Deploy on-prem or use our cloud.
           </p>
         </a>
         <a
@@ -118,24 +119,24 @@ import LogoWall from 'src/components/LogoWall.astro';
         <FAQ
           items={[
             {
-              question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit?',
+              question: 'What is the Vision of Open Federation?',
               answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nisi arcu. Nullam sit amet sapien porta, egestas eros et, rutrum turpis. Sed vitae tempus metus. Maecenas molestie, quam sit amet maximus posuere, elit elit facilisis lorem, in dictum ex est et ligula. Sed molestie orci ac nisi fringilla eleifend. In fringilla venenatis facilisis. Nulla posuere hendrerit vehicula.',
+                'We believe that GraphQL and especially Federation has a bright future ahead in the API space. Such an important Specification needs to be open and vendor-neutral. Being able to choose between different implementation and vendors is crucial for the success of Federated GraphQL. Healthy competition is good for the ecosystem and will drive innovation.',
             },
             {
-              question: 'Fusce a tellus eget nisl vehicula gravida?',
+              question: 'What is the Mission of Open Federation?',
               answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nisi arcu. Nullam sit amet sapien porta, egestas eros et, rutrum turpis. Sed vitae tempus metus. Maecenas molestie, quam sit amet maximus posuere, elit elit facilisis lorem, in dictum ex est et ligula. Sed molestie orci ac nisi fringilla eleifend. In fringilla venenatis facilisis. Nulla posuere hendrerit vehicula.',
+                'Open Federation aims to provide clarity in terms of how to implement Gateways and Services in a federated GraphQL architecture and to define a clear set of rules for how to implement composition checks for federated GraphQL APIs.',
             },
             {
-              question: 'Lorem ipsum dolor sit amet, consectetur adipiscing elits?',
+              question: 'Is Open Federation compatible with Apollo Federation v1 and v2?',
               answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nisi arcu. Nullam sit amet sapien porta, egestas eros et, rutrum turpis. Sed vitae tempus metus. Maecenas molestie, quam sit amet maximus posuere, elit elit facilisis lorem, in dictum ex est et ligula. Sed molestie orci ac nisi fringilla eleifend. In fringilla venenatis facilisis. Nulla posuere hendrerit vehicula.',
+                'Yes, Open Federation uses exactly the same Directives and is therefore compatible with Apollo Federation v1 and v2 Subgraphs. The goal of Open Federation is to always be compatible with the latest version of Apollo Federation to make it easy for people to migrate.',
             },
             {
-              question: 'Fusce a tellus eget nisl vehicula gravidas?',
+              question: 'Who is behind Open Federation and how can I be involved?',
               answer:
-                'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vestibulum sit amet nisi arcu. Nullam sit amet sapien porta, egestas eros et, rutrum turpis. Sed vitae tempus metus. Maecenas molestie, quam sit amet maximus posuere, elit elit facilisis lorem, in dictum ex est et ligula. Sed molestie orci ac nisi fringilla eleifend. In fringilla venenatis facilisis. Nulla posuere hendrerit vehicula.',
+                'Open Federation is initiated by WunderGraph and The Guild. We are looking for more contributors to help us shape the future of federated GraphQL APIs. If you are interested, please join our Discord.',
             },
           ]}
           client:idle
