@@ -14,7 +14,7 @@ const FAQ = ({
       return (
         <Accordion.Item className="group" key={question} value={question}>
           <Accordion.Header>
-            <Accordion.Trigger className="py-4 flex items-center w-full justify-between md:text-lg font-semibold text-left hover:text-purple-500">
+            <Accordion.Trigger className="py-4 flex items-center w-full justify-between md:text-lg font-semibold text-left hover:text-purple-700">
               {question}
               <MinusIcon className="h-6 w-6 group-radix-state-closed:hidden" />
               <PlusIcon className="h-6 w-6 group-radix-state-open:hidden" />
