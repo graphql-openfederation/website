@@ -1,0 +1,15 @@
+---
+interface Props {
+  name: string;
+  logo: string;
+  home: string;
+}
+
+const { name, logo, home } = Astro.props;
+---
+
+<a aria-label={name} target="_blank" href={home} class="border flex items-center justify-center h-32 w-64 bg-gray-50">
+  <div class="h-16 w-16 flex items-center justify-center">
+    <img class="h-full w-full brightness-0" alt={name} src={'/logos/' + logo} />
+  </div>
+</a>

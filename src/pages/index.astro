@@ -1,0 +1,150 @@
+---
+import FAQ from 'src/components/FAQ';
+import Navbar from 'src/components/Navbar.astro';
+import GraphParticles from '../components/GraphParticles.astro';
+import Layout from '../layouts/Layout.astro';
+import LogoWall from 'src/components/LogoWall.astro';
+---
+
+<script>
+  import { createPopup } from '@typeform/embed';
+  import '@typeform/embed/build/css/popup.css';
+
+  const toggle = createPopup('vVVVtoyJ');
+  document.getElementById('typeform')?.addEventListener('click', () => {
+    toggle.open();
+  });
+</script>
+
+<Layout title="Open Federation Initiative">
+  <main class="min-h-screen flex flex-col items-start">
+    <Navbar />
+
+    <section class="w-full py-24 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl">
+      <h1 class="text-5xl md:text-7xl xl:text-9xl max-w-2xl xl:max-w-4xl">Open Federation Initiative</h1>
+      <p class="text-lg md:text-2xl font-light mt-8 max-w-6xl">
+        Open Federation is a community-driven open source initiative to create and maintain a specification for
+        federated GraphQL APIs. Be part of the future; let's craft together.
+      </p>
+      <div class="flex flex-col md:flex-row w-full items-center gap-4 mt-8">
+        <a
+          target="_blank"
+          href="https://spec.open-federation.org/"
+          class="bg-black hover:opacity-80 px-6 py-3 text-center text-white transition-colors w-full md:w-max"
+          >Open Spec</a
+        >
+        <button id="typeform" class="text-black px-6 py-3 border hover:bg-gray-100 transition-colors w-full md:w-max"
+          >Subscribe for Updates</button
+        >
+      </div>
+    </section>
+
+    <LogoWall />
+
+    <section
+      id="solutions"
+      class="xl:grid grid-cols-5 py-24 w-full space-y-4 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl"
+    >
+      <div class="col-span-2">
+        <h2 class="text-2xl mb-12 md:text-4xl xl:text-6xl max-w-2xl xl:max-w-4xl !leading-tight">Solutions</h2>
+      </div>
+      <div class="col-span-3 flex flex-col md:grid grid-cols-2 gap-8">
+        <a
+          target="_blank"
+          href="https://wundergraph.com/cosmo"
+          class="flex flex-col items-start border rounded-md h-96 w-full hover:border-gray-500 transition-colors"
+        >
+          <div
+            class="p-4 h-2/3 bg-black w-full rounded-t-md text-white flex items-center gap-x-2 justify-center text-2xl"
+          >
+            <svg xmlns="http://www.w3.org/2000/svg" class="h-12 w-12" viewBox="0 0 1080 1080" fill="none">
+              <path
+                fill="currentColor"
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M447.099 231.913C405.967 244.337 367.742 264.878 334.682 292.323C320.832 268.71 298.796 251.002 272.754 242.557C313.865 205.575 362.202 177.525 414.709 160.178C467.216 142.832 522.751 136.567 577.803 141.781C632.855 146.994 686.227 163.571 734.544 190.465C746.769 197.27 758.603 204.698 770.004 212.711C770.394 212.542 770.785 212.376 771.179 212.213C785.976 206.085 802.259 204.482 817.967 207.607C833.676 210.733 848.105 218.446 859.429 229.771C870.754 241.096 878.465 255.525 881.589 271.233C884.712 286.941 883.107 303.223 876.976 318.018C870.845 332.814 860.464 345.459 847.146 354.355C833.828 363.252 818.171 367.999 802.154 367.997C791.52 367.997 780.991 365.902 771.167 361.833C761.343 357.763 752.417 351.799 744.898 344.28C737.379 336.76 731.415 327.834 727.347 318.01C723.279 308.186 721.186 297.657 721.187 287.024C721.187 282.871 721.506 278.742 722.135 274.672C713.657 268.849 704.889 263.426 695.859 258.426C658.269 237.612 616.889 224.541 574.163 219.988C531.437 215.434 488.232 219.489 447.099 231.913ZM319.489 348.564C319.489 363.809 315.185 378.728 307.094 391.613L323.693 420.326C307.59 439.476 285.501 452.638 260.995 457.683L244.582 429.298C237.31 429.844 229.959 429.408 222.73 427.971C207.024 424.848 192.597 417.138 181.273 405.816C169.949 394.495 162.237 380.069 159.112 364.365C155.986 348.661 157.588 332.382 163.715 317.588C169.841 302.794 180.217 290.149 193.531 281.251C206.845 272.354 222.498 267.604 238.511 267.601C249.145 267.6 259.674 269.693 269.499 273.761C279.324 277.829 288.251 283.793 295.77 291.311C303.29 298.829 309.255 307.755 313.325 317.578C317.394 327.402 319.489 337.931 319.489 348.564ZM260.998 457.685L400.599 699.132L442.692 772.036L484.794 699.132L537.279 608.237L589.621 698.805L631.691 771.687L673.783 698.794L744.391 576.462H859.708C861.079 564.36 861.767 552.19 861.769 540.01C861.771 527.83 861.08 515.66 859.697 503.558H702.288L694.971 516.229L631.67 625.857L579.327 535.278L537.235 462.374L495.208 535.289L442.692 626.184L323.7 420.328C307.596 439.478 285.506 452.64 260.998 457.685ZM861.77 540.003C861.768 552.183 861.08 564.353 859.709 576.455H937.128V503.551H859.709C861.088 515.653 861.776 527.823 861.77 540.003ZM937.154 503.558H938.332C939.411 515.563 940 527.721 940 540.01C940 760.902 760.967 940 540.027 940C319.088 940 140 760.924 140 540.031C139.942 500.879 145.66 461.933 156.968 424.449C175.493 444.394 200.696 456.845 227.794 459.44C221.851 485.163 218.231 515.061 218.231 540.01C218.231 717.668 362.259 861.764 540.038 861.764C705.462 861.764 841.629 736.99 859.731 576.462H937.154V503.558Z"
+              ></path>
+            </svg>
+            <p class="font-semibold">WunderGraph Cosmo</p>
+          </div>
+          <p class="p-4 my-auto">
+            The open source alternative to Apollo GraphOS and Federation. Migrate in one click and get rid of vendor
+            lock-in. Deploy on-prem or use our cloud.
+          </p>
+        </a>
+        <a
+          target="_blank"
+          href="https://the-guild.dev/graphql/hive"
+          class="flex flex-col items-start border rounded-md h-96 w-full hover:border-gray-500 transition-colors"
+        >
+          <div
+            class="p-4 h-2/3 bg-black w-full rounded-t-md text-white flex items-center gap-x-2 justify-center text-2xl"
+          >
+            <svg
+              width="51"
+              height="54"
+              viewBox="0 0 51 54"
+              fill="#ffb21d"
+              xmlns="http://www.w3.org/2000/svg"
+              class="mr-1.5 h-9 w-9"
+              ><path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M2.20473 20.2745C2.82801 20.4867 3.49281 20.6073 4.18673 20.6073C4.80999 20.6073 5.41118 20.5117 5.97891 20.3391V36.7481C5.97891 37.328 6.28841 37.8684 6.78767 38.1582L22.4819 47.2835C23.2242 46.4108 24.3236 45.8554 25.5512 45.8554C26.8874 45.8554 28.0698 46.5134 28.8067 47.5218C28.8197 47.5403 28.8337 47.5576 28.8467 47.5756C28.8985 47.6494 28.9469 47.7248 28.9939 47.8026L29.0477 47.891C29.0893 47.9626 29.1277 48.0355 29.1642 48.1093C29.1842 48.1489 29.2031 48.1891 29.222 48.2294C29.2533 48.2978 29.2828 48.3673 29.3109 48.4378C29.3309 48.4882 29.3487 48.5388 29.3665 48.5899C29.389 48.6544 29.4112 48.7195 29.4301 48.7852C29.4484 48.8477 29.463 48.9107 29.4787 48.9737L29.519 49.1513C29.5346 49.23 29.5449 49.3097 29.5557 49.3902C29.5616 49.4379 29.5708 49.4847 29.5751 49.5324C29.5876 49.6627 29.5951 49.7941 29.5951 49.9277C29.5951 50.1406 29.5741 50.3474 29.5422 50.5516L29.5309 50.6275C29.2004 52.5406 27.5435 54 25.5512 54C23.7746 54 22.2655 52.8386 21.7237 51.2314L4.90059 41.4502C3.23184 40.4806 2.20473 38.6876 2.20473 36.7481V20.2745ZM46.2419 10.2908C48.4719 10.2908 50.2856 12.1173 50.2856 14.3631C50.2856 15.5848 49.7465 16.6794 48.8978 17.4265V36.7481C48.8978 38.6876 47.8707 40.4806 46.2019 41.4502L31.7479 49.8539C31.7317 48.479 31.2702 47.2135 30.5047 46.1876L44.315 38.1582C44.8141 37.8684 45.1237 37.328 45.1237 36.7481V18.2736C43.4366 17.7838 42.1982 16.2179 42.1982 14.3631C42.1982 13.4601 42.4952 12.6277 42.9913 11.9517C42.9988 11.9409 43.0069 11.9306 43.0145 11.9197C43.1083 11.7948 43.2085 11.6743 43.3153 11.5608L43.3298 11.545C43.5514 11.3127 43.7995 11.1079 44.0702 10.9337C44.0981 10.9152 44.1278 10.8984 44.1564 10.8804C44.2637 10.8158 44.3731 10.755 44.4863 10.7002C44.5193 10.6844 44.5522 10.6671 44.5855 10.6519C44.7274 10.5878 44.8719 10.5286 45.0218 10.4814L45.3158 10.3994C45.6133 10.3287 45.9233 10.2908 46.2419 10.2908ZM25.5511 0C26.4822 0 27.4128 0.242165 28.2469 0.72704L42.7868 9.18112C41.7165 9.90759 40.8883 10.9637 40.4327 12.2006L26.3598 4.01908C26.1146 3.87572 25.8347 3.80081 25.5511 3.80081C25.2676 3.80081 24.9882 3.87572 24.7423 4.01908L8.16563 13.6574C8.20551 13.887 8.23032 14.1216 8.23032 14.3632C8.23032 16.1154 7.12395 17.608 5.57922 18.1814C5.56736 18.1858 5.55496 18.1906 5.5431 18.1944C5.42072 18.2385 5.29671 18.2765 5.16945 18.3085L5.09344 18.328C4.97698 18.3551 4.85782 18.3764 4.73812 18.3931L4.64054 18.4079C4.4912 18.4246 4.34021 18.4356 4.18656 18.4356C4.02212 18.4356 3.86037 18.4225 3.70022 18.403C3.65709 18.3974 3.61505 18.3899 3.57244 18.3834C3.44952 18.3643 3.32874 18.34 3.20958 18.3101C3.17291 18.3008 3.13626 18.2921 3.0996 18.2819C2.78418 18.1922 2.48439 18.0679 2.20457 17.9088L1.96423 17.7607C0.86844 17.0318 0.142792 15.7822 0.142792 14.3632C0.142792 12.1175 1.9571 10.2909 4.18656 10.2909C4.76508 10.2909 5.31396 10.4158 5.8116 10.6368L22.8552 0.72704C23.6893 0.242165 24.6205 0 25.5511 0Z"
+              ></path><path
+                fill-rule="evenodd"
+                clip-rule="evenodd"
+                d="M38.7344 22.3948L36.5413 26.192L38.7344 29.9892C38.9321 30.3314 38.9321 30.753 38.7344 31.0952L36.222 35.4454C36.0244 35.7876 35.6592 35.9984 35.2639 35.9984H30.8778L28.6847 39.7956C28.4871 40.1378 28.1219 40.3486 27.7266 40.3486H22.7018C22.3065 40.3486 21.9413 40.1378 21.7437 39.7956L19.5506 35.9984H15.1645C14.7692 35.9984 14.404 35.7876 14.2064 35.4454L11.694 31.0952C11.4963 30.753 11.4963 30.3314 11.694 29.9892L13.887 26.192L11.694 22.3948C11.4963 22.0526 11.4963 21.631 11.694 21.2888L14.2064 16.9386C14.404 16.5964 14.7692 16.3856 15.1645 16.3856H19.5506L21.7437 12.5884C21.9413 12.2462 22.3065 12.0354 22.7018 12.0354H27.7266C28.1219 12.0354 28.4871 12.2462 28.6847 12.5884L30.8778 16.3856H35.2639C35.6592 16.3856 36.0244 16.5964 36.222 16.9386L38.7344 21.2888C38.9321 21.631 38.9321 22.0526 38.7344 22.3948ZM15.8033 33.7864H19.5506L21.4243 30.5422L19.5506 27.298H15.8033L13.9296 30.5422L15.8033 33.7864ZM15.8033 25.086H19.5506L21.4243 21.8418L19.5506 18.5975H15.8033L13.9296 21.8418L15.8033 25.086ZM23.3406 38.1366H27.0879L28.9616 34.8924L27.0879 31.6482H23.3406L21.4668 34.8924L23.3406 38.1366ZM23.3405 22.9478L21.4668 26.192L23.3405 29.4362H27.0879L28.9616 26.192L27.0879 22.9478H23.3405ZM23.3406 20.7358H27.0879L28.9616 17.4915L27.0878 14.2474H23.3405L21.4668 17.4915L23.3406 20.7358ZM30.8778 33.7864H34.6251L36.4988 30.5422L34.6251 27.298H30.8778L29.0041 30.5422L30.8778 33.7864ZM30.8778 25.086H34.6251L36.4988 21.8418L34.6251 18.5976H30.8778L29.0041 21.8418L30.8778 25.086Z"
+              ></path></svg
+            >
+            <p class="font-semibold">GraphQL Hive</p>
+          </div>
+          <p class="p-4 my-auto">
+            The open source schema registry and observability tool by The Guild. A drop-in replacement for Apollo
+            Studio.
+          </p>
+        </a>
+      </div>
+    </section>
+
+    <section
+      id="faq"
+      class="xl:grid grid-cols-5 pb-24 lg:py-24 w-full space-y-4 px-4 md:px-8 lg:px-12 mx-auto max-w-screen-2xl"
+    >
+      <div class="col-span-2">
+        <h2 class="text-2xl md:text-4xl xl:text-6xl max-w-2xl xl:max-w-4xl !leading-tight">
+          Frequently Asked Questions
+        </h2>
+      </div>
+      <div class="col-span-3 flex flex-col divide-y divide-black">
+        <FAQ
+          items={[
+            {
+              question: 'What is the Vision of Open Federation?',
+              answer:
+                'We believe that GraphQL and especially Federation has a bright future ahead in the API space. Such an important Specification needs to be open and vendor-neutral. Being able to choose between different implementation and vendors is crucial for the success of Federated GraphQL. Healthy competition is good for the ecosystem and will drive innovation.',
+            },
+            {
+              question: 'What is the Mission of Open Federation?',
+              answer:
+                'Open Federation aims to provide clarity in terms of how to implement Gateways and Services in a federated GraphQL architecture and to define a clear set of rules for how to implement composition checks for federated GraphQL APIs.',
+            },
+            {
+              question: 'Is Open Federation compatible with Apollo Federation v1 and v2?',
+              answer:
+                'Yes, Open Federation uses exactly the same Directives and is therefore compatible with Apollo Federation v1 and v2 Subgraphs. The goal of Open Federation is to always be compatible with the latest version of Apollo Federation to make it easy for people to migrate.',
+            },
+            {
+              question: 'Who is behind Open Federation and how can I be involved?',
+              answer:
+                'Open Federation is initiated by WunderGraph and The Guild. We are looking for more contributors to help us shape the future of federated GraphQL APIs. If you are interested, please join our Discord.',
+            },
+          ]}
+          client:idle
+        />
+      </div>
+    </section>
+  </main>
+</Layout>
+
+<GraphParticles />
