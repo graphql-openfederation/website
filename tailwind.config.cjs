@@ -4,5 +4,5 @@ module.exports = {
   theme: {
     extend: {},
   },
-  plugins: [require('tailwindcss-radix')()],
+  plugins: [require('tailwindcss-radix')(), require('@tailwindcss/typography')],
 };

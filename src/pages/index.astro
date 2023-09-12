@@ -4,6 +4,8 @@ import Navbar from 'src/components/Navbar.astro';
 import GraphParticles from '../components/GraphParticles.astro';
 import Layout from '../layouts/Layout.astro';
 import LogoWall from 'src/components/LogoWall.astro';
+import Logo from 'src/components/OpenFederationLogo.astro';
+import Footer from 'src/components/Footer.astro';
 ---
 
 <script>
@@ -144,7 +146,8 @@ import LogoWall from 'src/components/LogoWall.astro';
         />
       </div>
     </section>
-  </main>
-</Layout>
 
-<GraphParticles />
+    <Footer />
+  </main>
+  <GraphParticles />
+</Layout>

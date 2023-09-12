@@ -1,8 +1,9 @@
 ---
-title: "Website Terms of Use"
+title: 'Website Terms of Use'
 tags: []
 date: 2023-09-01
-description: "The terms you agree to when accessing this website."
+description: 'The terms you agree to when accessing this website.'
+layout: ../layouts/Terms.astro
 ---
 
 Last modified: September 1st, 2023

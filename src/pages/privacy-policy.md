@@ -1,9 +1,10 @@
 ---
-title: "Website Privacy Policy"
+title: 'Website Privacy Policy'
 tags: []
 date: 2023-09-01
-description: "Open Federation Website Privacy Policy"
+description: 'Open Federation Website Privacy Policy'
 sidebarLink: false
+layout: ../layouts/PrivacyPolicy.astro
 ---
 
 Last updated: September 1st, 2023
