@@ -1,0 +1,23 @@
+---
+import solutions from '../../public/solutions/solutions.json';
+---
+
+{
+  solutions.map((s) => {
+    return (
+      <a
+        target="_blank"
+        href={s.home}
+        class="flex flex-col items-start border rounded-md h-96 w-full hover:border-gray-500 transition-colors"
+      >
+        <div class="p-4 h-2/3 bg-black w-full rounded-t-md text-white flex items-center gap-x-2 justify-center text-2xl">
+          <img class="h-ful w-full max-w-xs max-h-10" alt={s.name} src={'/solutions/' + s.logo} />
+        </div>
+        <div class="p-4">
+          <h2 class="py-2 font-bold">{s.name}</h2>
+          <p class="my-auto">{s.description}</p>
+        </div>
+      </a>
+    );
+  })
+}

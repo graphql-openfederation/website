@@ -1,0 +1,8 @@
+[
+  {
+    "name": "WunderGraph Cosmo",
+    "logo": "cosmo.svg",
+    "home": "https://wundergraph.com/cosmo",
+    "description": "The open source alternative to Apollo GraphOS and Federation. Migrate in one click and get rid of vendor lock-in. Deploy on-prem or use our cloud."
+  }
+]
