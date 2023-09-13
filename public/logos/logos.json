@@ -5,6 +5,11 @@
     "home": "https://wundergraph.com/"
   },
   {
+    "name": "Grafbase",
+    "logo": "Grafbase.svg",
+    "home": "https://grafbase.com/"
+  },
+  {
     "name": "Neo4j",
     "logo": "Neo4j.svg",
     "home": "https://neo4j.com/brand/"
