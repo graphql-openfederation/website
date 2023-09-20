@@ -1,10 +1,5 @@
 [
   {
-    "name": "WunderGraph",
-    "logo": "WunderGraph.svg",
-    "home": "https://wundergraph.com/"
-  },
-  {
     "name": "Grafbase",
     "logo": "Grafbase.svg",
     "home": "https://grafbase.com/"
@@ -15,9 +10,9 @@
     "home": "https://neo4j.com/brand/"
   },
   {
-    "name": "Tailor",
-    "logo": "Tailor.svg",
-    "home": "https://www.tailor.tech/"
+    "name": "Sibi",
+    "logo": "Sibi.svg",
+    "home": "https://www.sibipro.com/"
   },
   {
     "name": "Soundtrack",
@@ -25,13 +20,23 @@
     "home": "https://www.soundtrackyourbrand.com/"
   },
   {
+    "name": "Tailor",
+    "logo": "Tailor.svg",
+    "home": "https://www.tailor.tech/"
+  },
+  {
+    "name": "The Guild",
+    "logo": "TheGuild.svg",
+    "home": "https://the-guild.dev/"
+  },
+  {
     "name": "TravelpassGroup",
     "logo": "TravelpassGroup.svg",
     "home": "https://www.travelpassgroup.com/"
   },
   {
-    "name": "Sibi",
-    "logo": "Sibi.svg",
-    "home": "https://www.sibipro.com/"
+    "name": "WunderGraph",
+    "logo": "WunderGraph.svg",
+    "home": "https://wundergraph.com/"
   }
 ]

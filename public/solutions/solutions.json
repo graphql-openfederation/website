@@ -4,5 +4,11 @@
     "logo": "cosmo.svg",
     "home": "https://wundergraph.com/cosmo",
     "description": "The open source alternative to Apollo GraphOS and Federation. Migrate in one click and get rid of vendor lock-in. Deploy on-prem or use our cloud."
+  },
+  {
+    "name": "GraphQL Hive",
+    "logo": "hive.svg",
+    "home": "https://the-guild.dev/graphql/hive",
+    "description": "The open source schema registry and observability tool by The Guild. A drop-in replacement for Apollo Studio."
   }
 ]
