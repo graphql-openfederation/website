@@ -1,5 +1,10 @@
 [
   {
+    "name": "Evmos Community DAO",
+    "logo": "EvmosDao.svg",
+    "home": "https://evmosdao.org/"
+  },  
+  {
     "name": "Grafbase",
     "logo": "Grafbase.svg",
     "home": "https://grafbase.com/"
