@@ -3,7 +3,7 @@
     "name": "Evmos Community DAO",
     "logo": "EvmosDao.svg",
     "home": "https://evmosdao.org/"
-  },  
+  },
   {
     "name": "Grafbase",
     "logo": "Grafbase.svg",
@@ -28,11 +28,6 @@
     "name": "Tailor",
     "logo": "Tailor.svg",
     "home": "https://www.tailor.tech/"
-  },
-  {
-    "name": "The Guild",
-    "logo": "TheGuild.svg",
-    "home": "https://the-guild.dev/"
   },
   {
     "name": "TravelpassGroup",
